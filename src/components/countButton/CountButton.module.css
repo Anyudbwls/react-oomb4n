@@ -1,0 +1,16 @@
+.counterButton {
+  border: 1px solid var(--color-gray-200);
+  margin: 16px 0;
+  display: inline-flex;
+  align-items: center;
+  width: 110px;
+  justify-content: space-between;
+  color: var(--color-black);
+}
+.minus,
+.plus {
+  border: none;
+  height: 34px;
+  width: 34px;
+  font-size: 16px;
+}

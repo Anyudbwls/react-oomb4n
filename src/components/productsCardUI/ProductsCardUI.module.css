@@ -1,0 +1,117 @@
+@import url(../../module.css/theme.module.css);
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.productsCard {
+  min-width: 360px;
+  padding: 16px;
+  border: 1px solid #000;
+}
+.viewport {
+  width: clamp(320px, 100vw, 800px);
+}
+
+.hello {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  font-size: 2rem;
+  font-weight: 100;
+  background-color: rgb(100, 211, 211);
+  /* background: #415162; */
+  /* color: #fefefe; */
+  color: blueviolet;
+}
+
+.discountPercent {
+  color: var(--color-secondary);
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+.price {
+  display: flex;
+  align-items: center;
+}
+
+.discountPrice {
+  text-decoration: line-through;
+  color: var(--color-gray-300);
+  font-size: 1rem;
+  margin-right: 5px;
+}
+.originalPrice {
+  color: var(--color-black);
+  font-size: 1.375rem;
+}
+
+.deliveryPrice {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.875rem;
+  color: var(--color-black);
+  border-bottom: 1px solid var(--color-gray-200);
+}
+.info span {
+  padding-right: 6px;
+}
+
+.deco {
+  color: var(--color-gray-200);
+}
+.info span:nth-child(3) {
+  font-weight: bold;
+}
+.infoSecondary {
+  color: var(--color-secondary);
+  font-weight: bold;
+}
+.deliveryPrice div:nth-child(2) {
+  margin: 8px 0;
+  color: var(--color-gray-300);
+  font-size: 0.875rem;
+}
+.total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--color-gray-200);
+  padding: 20px 0;
+}
+
+.totalInfo span {
+  margin-right: 2px;
+  font-weight: bold;
+  font-size: 0.875rem;
+}
+
+.totalInfo button {
+  border: 1px solid var(--color-gray-200);
+  background: var(--color-white);
+}
+.totalResult {
+  display: flex;
+  gap: 6px;
+  font-size: 0.875rem;
+  align-items: center;
+}
+.totalResult > span:first-child {
+  color: var(--color-gray-300);
+}
+.resultSecondary {
+  font-size: 1.375rem;
+  font-weight: bold;
+  color: var(--color-secondary);
+}
