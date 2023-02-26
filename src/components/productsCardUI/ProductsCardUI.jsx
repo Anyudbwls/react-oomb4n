@@ -8,13 +8,19 @@ import CountOneBuyButton from '../countBuyButton/CountOneBuyButton';
 export default function ProductsCardUI() {
   const [amount, setAmount] = React.useState(0);
   const totalPrice = amount * 6370;
-  const unitTotalPrice = totalPrice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+  const unitTotalPrice = totalPrice
+    .toString()
+    .replace(/\B(?=(\d{3})+(?!\d))/g, ',');
 
   return (
     <>
       <article className={classes.productsCard}>
         <section>
-          <img src={productImg} className={classes.viewport} alt=".." />
+          <img
+            src="../../assets/레피젠.svg"
+            className={classes.viewport}
+            alt=".."
+          />
           <div>
             <h2> 레피젠 코로나 자가 검사 키트 </h2>
             <h2> 2개입X1박스 </h2>
